@@ -1,0 +1,8 @@
+#Headers[JSON FORMAT]
+mandatory-headers: '{"X-HSBC-REQ-ID":"^[a-zA-Z0-9]+$;X-HSBC-REQ-ID is invalid.",
+                     "X-HSBC-CONSUMER-ID":"^[a-zA-Z0-9._-]+$;X-HSBC-CONSUMER-ID is invalid."
+                    }'
+  
+nonmandatory-headers: '{"X-HSBC-RESP-ID":"^[a-zA-Z0-9]+$;Invalid header X-HSBC-RESP-ID",
+                        "X-HSBC-PRODUCER-ID":"^[a-zA-Z0-9]+$;Invalid header X-HSBC-PRODUCER-ID"
+                       }'

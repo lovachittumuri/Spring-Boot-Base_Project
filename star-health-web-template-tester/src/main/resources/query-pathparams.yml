@@ -1,0 +1,10 @@
+#Query Params [JSON FORMAT]                      
+mandatory-query-params: '{"ebankingNo":"^[a-zA-Z0-9]+$;Invalid query param ebankingNo",
+                           "ConsumerNo":"^[a-zA-Z0-9._-]+$;Invalid query param ConsumerNo"
+                         }'
+                         
+nonmandatory-query-params: '{"consumerName":"^[a-zA-Z0-9]+$;Invalid query param consumerName",
+                             "producerName":"^[a-zA-Z0-9]+$;Invalid query param producerName"
+                            }'
+#Path params[JSON FORMAT]
+path-params: '{"id":"^[a-zA-Z0-9]+$;Invalid path param id"}'  

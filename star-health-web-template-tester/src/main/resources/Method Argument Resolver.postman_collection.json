@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "980984d8-9157-2f4c-a9bc-a3a9a7799b7a",
+		"name": "Method Argument Resolver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9645721"
+	},
+	"item": [
+		{
+			"name": "Method argument",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-hsbc-corelationId",
+						"value": "243"
+					},
+					{
+						"key": "X-HSBC-CONSUMER-ID",
+						"value": "143",
+						"type": "text"
+					},
+					{
+						"key": "X-HSBC-REQ-ID",
+						"value": "233",
+						"type": "text"
+					},
+					{
+						"key": "X-HSBC-RESP-ID",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "X-HSBC-PRODUCER-ID",
+						"value": "321",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"APIKEY\": \"dsf7567fmmmjhequwqer\",\n    \"SECRETKEY\": \"zsruie46242795wrnkadro\",\n    \"policyName\": \"Corna Kavach\",\n    \"postalCode\": \"523302\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2023/post/premium/calculate/123?consumerName=Gautami&ebankingNo=1234328&ConsumerNo=4567&producerName=Venkat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"post",
+						"premium",
+						"calculate",
+						"123"
+					],
+					"query": [
+						{
+							"key": "consumerName",
+							"value": "Gautami"
+						},
+						{
+							"key": "ebankingNo",
+							"value": "1234328"
+						},
+						{
+							"key": "ConsumerNo",
+							"value": "4567"
+						},
+						{
+							"key": "producerName",
+							"value": "Venkat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Method",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-hsbc-correlationid",
+						"value": "233",
+						"type": "text"
+					},
+					{
+						"key": "X-HSBC-CONSUMER-ID",
+						"value": "143",
+						"type": "text"
+					},
+					{
+						"key": "X-HSBC-REQ-ID",
+						"value": "233",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:2023/get/premium/calculate/123?pid=5677&pname=venkat&ebankingNo=786&ConsumerNo=420",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"get",
+						"premium",
+						"calculate",
+						"123"
+					],
+					"query": [
+						{
+							"key": "pid",
+							"value": "5677"
+						},
+						{
+							"key": "pname",
+							"value": "venkat"
+						},
+						{
+							"key": "ebankingNo",
+							"value": "786"
+						},
+						{
+							"key": "ConsumerNo",
+							"value": "420"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

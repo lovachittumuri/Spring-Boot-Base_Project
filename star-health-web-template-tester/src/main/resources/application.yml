@@ -1,0 +1,5 @@
+server:
+    port: 2023
+spring:
+   config:
+      import: headers.yml,query-pathparams.yml    
